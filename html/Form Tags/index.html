@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic forms</title>
+  </head>
+  <body>
+   <fieldset>
+    <legend align="center">Basic Form</legend>
+     <form>
+      <label for="FullName">Full Name:</label>
+      <input
+        type="text"
+        name="yourName"
+        id="FullName"
+        placeholder="enter your name"
+      />
+      <br />
+      <br />
+      <label for="email">email:</label>
+      <input type="email" name="email" id="email" placeholder="your email" />
+      <br />
+      <br />
+      <label for="password">password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+      />
+      <br /><br />
+      <label for="cfpassword">confirm password:</label>
+      <input
+        type="password"
+        name="cfpassword"
+        id="cfpassword"
+        placeholder="confirm your password"
+      />
+      <br /><br />
+      <label for="dob">Date of birth</label>
+      <input
+        type="date"
+        name="dob"
+        id="dob"
+       
+      />
+      <br>
+      <br>
+       <label for="tob">time of birth</label>
+      <input
+        type="time"
+        name="tob"
+        id="tob"
+       
+      />
+      <br>
+      <br>
+       <label for="joinigTime">joining time:</label>
+      <input
+        type="datetime-local"
+        name="joiningTime"
+        id="joiningTime"
+       
+      />
+      <br>
+      <br>
+       <label for="volume">volume:</label>
+      <input
+        type="range"
+        name="volume"
+        id="volume"
+        min="0"
+        max="10"
+        value="3"
+       
+      />
+      <br>
+      <br>
+       <label for="number">mobile:</label>
+      <input
+        type="number"
+        name="mobile"
+        id="number"
+         min="0"
+        max="10"
+       
+      />
+      <br>
+      <br>
+       <label for="resume">resume:</label>
+      <input
+        type="file"
+        name="resume"
+        id="resume"
+      />
+       <br>
+      <br>
+       <label for="address">address:</label>
+      <textarea name="address" id="address"></textarea>
+      <br>
+      <br>
+      <label for="course">course:</label>
+      <select name="course" id="course">
+        <option value="">--Select Course--</option>
+        <option value="btech">B Tech</option>
+         <option value="bba">BBA</option>
+          <option value="mtech">M Tech</option>
+          <option value="mba">MBA</option>
+      </select>
+      <br>
+      <br>
+      <label for="gender">gender:</label>
+      <input type="radio" name="gender" id="male" value="male">
+      <span>male</span>
+      <input type="radio" name="gender" id="female" value="female">
+      <span>female</span>
+      <input type="radio" name="gender" id="others" value="male">
+      <span>others</span>
+    
+      <br><br>
+      <button>Submit</button>
+    </form>
+   </fieldset>
+  </body>
+</html>
