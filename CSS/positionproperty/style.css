@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header
+{
+    background-color: aqua;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+#menuitem{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+#menuitem button{
+    padding: 5px 10px;
+    background-color: brown;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-weight: 100px;
+}
+#askme{
+     padding: 5px 10px;
+    background-color: rgb(120, 215, 133);
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-weight: 100px;
+
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
+#section1{
+    display: flex;
+    gap: 20px;
+}
+#ricr-img-div{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+#image{
+    width: fit;
+    height: inherit;
+}
+#read-more,
+#learn-more {
+  padding: 5px 10px;
+  background: rgb(249, 135, 135);
+  border: 1px solid #8b0202;
+  border-radius: 5px;
+}
+
+#learn-more {
+  position: absolute;
+  bottom: 10px;
+  left: 55%;
+}
