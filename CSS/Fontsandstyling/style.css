@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Edu+QLD+Hand:wght@400..700&family=Playwrite+BE+WAL+Guides&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  font-size: xx-large;
+  font-weight: 900;
+   font-family: "Archivo Black",system-ui;
+}
+.subheading {
+  font-size: x-large;
+  font-weight: 700;
+  font-style: italic;
+   font-family: "Archivo Black", system-ui;
+}
+#description span {
+  font-weight: 400;
+  text-decoration: underline;
+  color: blue;
+}
+main {
+  margin-top: 10px;
+}
+.pointer-head {
+  font-size: larger;
+  font-weight: 700;
+}
+ul {
+  margin-left: 30px;
+  list-style: "😭  ";
+}
+
+footer {
+  background-color: darkblue;
+  color: aliceblue;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+#section2 {
+  ol {
+    margin-left: 30px;
+    list-style: lower-greek;
+  }
+  li::first-letter {
+    font-size: xx-large;
+  }
+  ol li:first-child {
+    background-color: aqua;
+  }
+  ol li:last-child {
+    background-color: aquamarine;
+  }
+}
+#section3 {
+  ol {
+    margin-left: 30px;
+    list-style: lower-greek;
+    line-height: 50px;
+  }
+  ol li:nth-child(even) {
+    background-color: aqua;
+  }
+  ol li:nth-child(odd) {
+    background-color: rgb(128, 203, 178);
+  }
+}

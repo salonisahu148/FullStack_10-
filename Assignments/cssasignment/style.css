@@ -18,6 +18,14 @@ body {
   align-items: center;
   gap: 60px;
 }
+.input-box i{
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #777;
+}
 
 .login-container {
   width: 350px;

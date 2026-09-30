@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#hw{
+    width: 400px;
+    height: 2.5rem;
+    border: 1px solid #000;
+    text-wrap-mode: nowrap;
+    overflow: hidden;
+    background-color: darkgreen;
+    transition:
+     width 2s 1s,
+    background-color 2s 1s ;
+
+}
+#hw:hover{
+    width: 600px;
+    background-color: crimson;
+    transition:
+     width 2s 1s,
+    background-color 2s 1s ;
+    
+}
+#welcome{
+    color: crimson;
+}
+#welcome::after{
+    content: "❤️";
+}
+.d::before{
+content: "😒";
+}
+#box1,#box2 ,#box3 ,#box4 ,#box5
+{
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+}
+#box1:hover{
+    width: 500px;
+    transition: all 2s ease;
+}
+#box2:hover{
+    width: 500px;
+    transition: all 2s ease-in;
+}
+#box3:hover{
+    width: 500px;
+    transition: all 2s ease-in-out;
+}
+#box4:hover{
+    width: 500px;
+    transition: all 2s ease-out;
+}
+#box5:hover{
+    width: 500px;
+    transition: all 2s linear;
+}
