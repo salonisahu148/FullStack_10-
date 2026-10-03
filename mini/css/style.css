@@ -1,0 +1,1022 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================= HEADER ================= */
+
+#navigation-bar {
+    background-color: #3b5d50;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 60px;
+}
+
+
+/* Logo */
+
+#brand-name {
+    text-decoration: none;
+    color: white;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* Menu + Icons */
+
+#menu-item {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Menu */
+
+#menu-item > div:first-child {
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+.menu {
+    position: relative;
+
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 14px;
+
+    padding: 15px 0;
+}
+
+
+/* Menu hover */
+
+.menu:hover {
+    color: white;
+}
+
+
+/* Active Home */
+
+.menu.active {
+    color: white;
+}
+
+
+/* Yellow line under Home */
+
+.menu.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 5px;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #f9bf29;
+}
+
+
+/* ================= ICONS ================= */
+
+#menu-item > div:last-child {
+    display: flex;
+    align-items: center;
+
+    /* Menu aur icons ke beech gap */
+    margin-left: 60px;
+
+    gap: 20px;
+}
+
+
+#user,
+#cart {
+    width: 21px;
+    height: 21px;
+
+    cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+#hero {
+    background-color: #3b5d50;
+
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px;
+}
+
+
+/* Left Content */
+
+#hero-content {
+    width: 45%;
+
+    color: white;
+}
+
+
+#hero-content h1 {
+    font-size: 50px;
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+}
+
+
+#hero-content p {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    max-width: 500px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Buttons */
+
+#hero-buttons {
+    display: flex;
+
+    gap: 12px;
+}
+
+
+#shop-button,
+#explore-button {
+    text-decoration: none;
+
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+}
+
+
+#shop-button {
+    background-color: #f9bf29;
+
+    color: #222;
+}
+
+
+#explore-button {
+    color: white;
+
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+
+/* ================= SOFA ================= */
+
+#hero-image {
+    width: 55%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#hero-image img {
+    width: 100%;
+
+    max-width: 650px;
+}/* ==============================
+   SECOND PRODUCTS SECTION
+================================ */
+
+.products-section {
+    background: #eff0ef;
+    padding: 100px 8% 110px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* ==============================
+   LEFT CONTENT
+================================ */
+
+.products-intro {
+    width: 25%;
+    padding-top: 20px;
+}
+
+.products-intro h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 22px;
+}
+
+.products-intro p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.explore-btn {
+    display: inline-block;
+
+    background: #222;
+    color: #fff;
+
+    text-decoration: none;
+
+    padding: 12px 24px;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ==============================
+   PRODUCT
+================================ */
+
+.product {
+    position: relative;
+
+    width: 22%;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    padding-bottom: 25px;
+}
+
+
+/* ==============================
+   PRODUCT IMAGE AREA
+================================ */
+
+.product-image {
+    position: relative;
+
+    width: 100%;
+    height: 280px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin-bottom: 10px;
+
+    transition: 0.4s ease;
+}
+
+
+/* IMAGE */
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+
+
+/* ==============================
+   LIGHT GREY BACKGROUND
+================================ */
+
+.product-image::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 0;
+
+    height: 65%;
+
+    background: #e6e7e6;
+
+    border-radius: 10px;
+
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+
+    z-index: 0;
+}
+
+
+/* IMAGE ABOVE BACKGROUND */
+
+.product-image img {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ==============================
+   PRODUCT INFORMATION
+================================ */
+
+.product-info {
+    position: relative;
+    z-index: 2;
+
+    transition: transform 0.4s ease;
+}
+
+.product-info h3 {
+    font-size: 14px;
+
+    font-weight: 500;
+
+    color: #222;
+
+    margin-bottom: 7px;
+}
+
+.product-info strong {
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #222;
+}
+
+
+/* ==============================
+   PLUS BUTTON
+================================ */
+
+.add-btn {
+    position: absolute;
+
+    left: 50%;
+
+    bottom: -5px;
+
+    transform: translateX(-50%) translateY(15px);
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #222;
+
+    color: #fff;
+
+    font-size: 22px;
+
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+/* ==============================
+   HOVER EFFECT
+================================ */
+
+.product:hover .product-image::before {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* IMAGE MOVES UP */
+
+.product:hover .product-image img {
+    transform: translateY(-25px);
+}
+
+
+/* PRODUCT TEXT SLIGHTLY UP */
+
+.product:hover .product-info {
+    transform: translateY(-5px);
+}
+
+
+/* PLUS BUTTON APPEARS */
+
+.product:hover .add-btn {
+    opacity: 1;
+
+    transform: translateX(-50%) translateY(0);
+}
+
+
+/* ==============================
+   PLUS BUTTON HOVER
+================================ */
+
+.add-btn:hover {
+    background: #000;
+
+    transform: translateX(-50%) scale(1.1) !important;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .products-section {
+        padding: 70px 5%;
+        gap: 20px;
+    }
+
+    .products-intro {
+        width: 25%;
+    }
+
+    .product {
+        width: 23%;
+    }
+
+    .product-image {
+        height: 220px;
+    }
+
+    .products-intro h2 {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .products-section {
+        flex-wrap: wrap;
+    }
+
+    .products-intro {
+        width: 100%;
+    }
+
+    .product {
+        width: 30%;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+
+/* MAIN SECTION */
+
+.why-section {
+    padding: 100px 8%;
+}
+
+.why-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* LEFT SIDE */
+
+.why-content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.intro {
+    max-width: 650px;
+
+    font-size: 14px;
+    line-height: 1.9;
+
+    color: #777;
+
+    margin-bottom: 45px;
+}
+
+
+/* FEATURES */
+
+.features {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 55px;
+    row-gap: 40px;
+}
+
+.feature {
+    position: relative;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    font-size: 25px;
+
+    color: #222;
+
+    position: relative;
+}
+
+
+/* Small grey circle behind icon */
+
+.icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+
+    background: #dfe2e5;
+
+    border-radius: 50%;
+
+    right: -3px;
+    bottom: 0;
+
+    z-index: -1;
+}
+
+
+.feature h3 {
+    font-size: 15px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #777;
+
+    max-width: 250px;
+}
+
+
+/* RIGHT IMAGE */
+
+.why-image {
+    position: relative;
+
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+
+/* DOTTED BACKGROUND */
+
+.dots {
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -30px;
+    left: -80px;
+
+    background-image: radial-gradient(
+        #d9b78c 2px,
+        transparent 2px
+    );
+
+    background-size: 30px 30px;
+
+    z-index: -1;
+}
+
+
+/* IMAGE */
+
+.why-image img {
+    display: block;
+
+    width: 100%;
+
+    height: 570px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .why-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .why-image {
+        max-width: 600px;
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .why-section {
+        padding: 60px 25px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+
+        row-gap: 35px;
+    }
+
+    .why-content h2 {
+        font-size: 30px;
+    }
+
+    .why-image img {
+        height: 400px;
+    }
+
+}
+.interior-section {
+    padding: 80px 7%;
+}
+
+.interior-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* =========================
+   IMAGE AREA
+========================= */
+
+.image-area {
+    position: relative;
+
+    height: 540px;
+}
+
+
+/* Dots */
+
+.dots {
+    position: absolute;
+
+    top: -50px;
+    left: -80px;
+
+    width: 180px;
+    height: 180px;
+
+    background-image: radial-gradient(
+        #d7a85d 2px,
+        transparent 2px
+    );
+
+    background-size: 27px 27px;
+
+    z-index: 0;
+}
+
+
+/* =========================
+   LARGE IMAGE
+========================= */
+
+.large-image {
+    position: absolute;
+
+    left: 0;
+    top: 30px;
+
+    width: 63%;
+    height: 500px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    z-index: 2;
+}
+
+.large-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   SMALL TOP IMAGE
+========================= */
+
+.small-image {
+    position: absolute;
+
+    top: 0;
+    right: 10px;
+
+    width: 28%;
+    height: 190px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    z-index: 3;
+}
+
+.small-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   BOTTOM IMAGE
+========================= */
+
+.bottom-image {
+    position: absolute;
+
+    right: 10px;
+    bottom: 0;
+
+    width: 55%;
+    height: 290px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    z-index: 3;
+}
+
+.bottom-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+
+.content-area {
+    padding-left: 10px;
+}
+
+.content-area h2 {
+    font-size: 34px;
+
+    line-height: 1.15;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+
+    color: #111;
+}
+
+.description {
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   POINTS
+========================= */
+
+.points {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 35px;
+    row-gap: 18px;
+
+    margin-bottom: 30px;
+}
+
+.point {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+}
+
+.point span {
+    font-size: 18px;
+
+    line-height: 1;
+
+    color: #333;
+}
+
+.point p {
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #666;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.explore-btn {
+    border: none;
+
+    background: #182536;
+
+    color: white;
+
+    padding: 13px 27px;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #000;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .interior-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .image-area {
+        max-width: 650px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .interior-section {
+        padding: 50px 25px;
+    }
+
+    .image-area {
+        height: 450px;
+    }
+
+    .large-image {
+        width: 65%;
+        height: 420px;
+    }
+
+    .small-image {
+        width: 32%;
+        height: 150px;
+    }
+
+    .bottom-image {
+        width: 55%;
+        height: 230px;
+    }
+
+    .content-area h2 {
+        font-size: 28px;
+    }
+
+    .points {
+        grid-template-columns: 1fr;
+    }
+
+}

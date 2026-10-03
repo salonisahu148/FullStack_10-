@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+        .nav-links{
+            cursor: pointer;
+        }
+        .dropdown{
+            background-color: transparent !important;
+            border: none !important;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="navbar bg-primary">
+      <div class="container">
+        <div class="navbar-brand text-light fw-semibold">Learning hub</div>
+        <div class="nav-item text-light d-flex gap-5">
+          <div class="nav-links">home</div>
+          <div class="nav-links">about</div>
+          <div class="dropdown">
+  <button class="btn btn dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Courses
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">java</a></li>
+    <li><a class="dropdown-item" href="#">DSA</a></li>
+    <li><a class="dropdown-item" href="#">webdev</a></li>
+  </ul>
+</div>
+          <div class="nav-links">contact</div>
+        </div>
+      </div>
+    </div>
+    <div class="container p-3">
+        <label for="fullname" class="form-lable">Full Name</label><input type="text" class="form-control">
+        <br>
+        <label for="Course" class="form-label">Course</label>
+        <select type="text" class="form-select">
+        <option value="">--select-</option>
+       <option value="">2</option>
+          <option value="">3</option>
+           <option value="">4</option>
+           </select>
+           <br>
+           <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" role="switch" id="inabled" >
+            <label for="enable">enabled</label>
+           </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
