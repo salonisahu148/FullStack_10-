@@ -117,11 +117,19 @@ p {
 
   color: #222;
 }
+#shop-button:hover{
+ background-color: #dfb754;
+ color: white;
+}
+#explore-button:hover{
+  padding: 15px 30px;
+}
 
 #explore-button {
   color: white;
   border: 2px solid rgba(255, 255, 255, 0.4);
 }
+
 .testi-head {
   font-size: xx-large;
   font-weight: 500;
@@ -206,13 +214,7 @@ p {
   padding-top: 100px;
   padding-right: 65px;
 
-  .post img {
-    width: 420px;
-    border-radius: 6%;
-    object-fit: cover;
-    gap: 5px;
-    height: 300px;
-  }
+ 
   p {
     padding-top: 12px;
     color: #111;
@@ -224,6 +226,22 @@ p {
     }
   }
 }
+.post{
+  overflow: hidden;
+  border-radius: 6%;
+}
+.post img {
+    width: 420px;
+    border-radius: 6%;
+    object-fit: cover;
+    gap: 5px;
+    height: 300px;
+    transition: transform 0.5s ease;
+  }
+  .post:hover img{
+    transform: scale(1.03);
+    opacity: 93%;
+  }
 .footer-top{
     display: grid;
     grid-template-columns: auto auto;

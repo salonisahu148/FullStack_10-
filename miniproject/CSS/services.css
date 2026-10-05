@@ -111,7 +111,13 @@ p {
 
   font-weight: bold;
 }
-
+#shop-button:hover{
+ background-color: #dfb754;
+ color: white;
+}
+#explore-button:hover{
+  padding: 15px 30px;
+}
 #shop-button {
   background-color: #f9bf29;
 

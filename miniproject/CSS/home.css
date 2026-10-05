@@ -42,6 +42,16 @@ body {
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   padding: 14px 0;
+  
+}
+.menu a::after{
+content: "";
+background-color: rgb(197, 197, 33);
+padding-bottom: 2px;
+width: 16px;
+height: 2px;
+position: absolute;
+transition: 1s ease;
 }
 #cart {
   color: aliceblue;
@@ -111,7 +121,13 @@ p {
 
   font-weight: bold;
 }
-
+#shop-button:hover{
+ background-color: #dfb754;
+ color: white;
+}
+#explore-button:hover{
+  padding: 15px 30px;
+}
 #shop-button {
   background-color: #f9bf29;
 
@@ -158,6 +174,10 @@ p {
   border-radius: 25px;
   font-weight: 600;
   font-size: 19px;
+}
+.content-explore:hover{
+   background: #2b2b2b;
+    padding: 15px 32px;
 }
 .product {
   position: relative;
@@ -849,13 +869,7 @@ h4 {
   padding-top: 60px;
   padding-right: 65px;
 
-  .post img {
-    width: 420px;
-    border-radius: 6%;
-    object-fit: cover;
-    gap: 5px;
-    height: 300px;
-  }
+  
   p {
     padding-top: 12px;
     color: #111;
@@ -867,6 +881,22 @@ h4 {
     }
   }
 }
+.post{
+  overflow: hidden;
+  border-radius: 6%;
+}
+.post img {
+    width: 420px;
+    border-radius: 6%;
+    object-fit: cover;
+    gap: 5px;
+    height: 300px;
+    transition: transform 0.5s ease;
+  }
+  .post:hover img{
+    transform: scale(1.03);
+    opacity: 93%;
+  }
 .footer-top{
     display: grid;
     grid-template-columns: auto auto;
