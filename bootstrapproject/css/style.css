@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+a{
+    text-decoration: none;
+
+}
+.font-inter{
+    font-family: "Inter",sans-serif;
+}
+.font-Roboto{
+    font-family: "Roboto",cursive;
+}
+#hero{
+
+    #bg-img-1{
+        height: 90vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(40%);
+    }
+    #hero-outer{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero-inner{
+        border: 3px solid palevioletred;
+        width: 50%;
+        display: flex;
+
+    }
+}
