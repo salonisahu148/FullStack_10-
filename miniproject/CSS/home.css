@@ -180,7 +180,7 @@ p {
     padding: 15px 32px;
 }
 .product {
-  position: relative;
+ position: relative;
 
   text-align: center;
   cursor: pointer;
@@ -191,12 +191,15 @@ p {
   gap: 25px;
 }
 .product1 {
-  position: relative;
+  position: absolute;
+ 
   width: 300px;
   height: 100%;
   text-align: center;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content:space-around;
+  gap: 6px;
   align-items: center;
   margin-bottom: 10px;
   transition: 0.4s ease;
@@ -1033,7 +1036,8 @@ h4 {
     .footer-bottom-right a{
  text-decoration: none;
  width: 500px;
-   display: inline;
+   display: flex;
+   justify-content:flex-end;
  
    
     color: #777;
