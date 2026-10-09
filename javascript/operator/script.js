@@ -31,3 +31,10 @@ console.log(a);//10
 
 
 console.log(a>b ? "hello":"bye");
+
+
+if(a<b){
+    console.log("hello")
+}else{
+    console.log("bye")
+}

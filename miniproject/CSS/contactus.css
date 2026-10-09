@@ -43,6 +43,26 @@ body {
   font-size: 16px;
   padding: 14px 0;
 }
+.menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+
+  width: 0;
+  height: 4px;
+  background-color: #f9bf29;
+
+  transition: width 0.5s ease;
+}
+
+.menu:hover::after {
+  width: 100%;
+}
+
+.menu:hover {
+  color: white;
+}
 #cart {
   color: aliceblue;
   height: 21px;
