@@ -145,57 +145,91 @@ p {
 
 .product {
   position: relative;
-
   text-align: center;
   cursor: pointer;
-   padding-bottom: 50px;
+  /* padding-bottom: 25px;  */
   display: grid;
   justify-content: flex-end;
   grid-template-columns: auto auto auto auto;
   gap: 25px;
 }
-.product1 {
-  position: relative;
-  width: 300px;
-  height: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 10px;
-  transition: 0.4s ease;
- 
+
+.product1,
+.product2,
+.product3,
+.product4 {
+    position: relative;
+    height: 350px;
+   /* display: grid;
+    grid-template-columns: auto auto auto auto;
+    */
+    align-items: center;
+    justify-content: center;
 }
 
-.product1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition:
-    transform 0.4s ease,
-    filter 0.4s ease;
-  position: relative;
-  z-index: 1;
-}
-.product1::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 90%;
-  background: #e6e7e6;
-  border-radius: 10px;
-  opacity: 0;
-  transform: translate(20px);
-  transition:
-    opacity 0.4s ease,
-    transform 0.4s ease;
-  z-index: 0;
+.product1 img,
+.product2 img,
+.product3 img,
+.product4 img {
+    width: 290px;
+    height: 290px;
+    object-fit: contain;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s ease;
 }
 
 
+.product1:hover img,
+.product2:hover img,
+.product3:hover img ,
+.product4:hover img {
+    transform: scale(1.08);
+     transform: translateY(-25px);
+}
+
+.product-info {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding-top: 10px;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.product-info strong {
+    display: block;
+    font-size: 16px;
+}
+
+.add-btn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: #343a40;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.4s ease;
+}
+
+.product-info:hover .add-btn,
+.product1:hover ~ .product-info .add-btn,
+.product2:hover ~ .product-info .add-btn,
+.product3:hover ~ .product-info .add-btn ,
+.product4:hover ~ .product-info .add-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
