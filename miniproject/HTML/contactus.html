@@ -27,7 +27,7 @@
           </div>
 
           <div id="icons">
-            <img src="../assets/user.svg" alt="user" id="cart" />
+             <a  href="../HTML/userlogin.html">  <img src="../assets/user.svg" alt="user" id="cart" /></a>
             <img src="../assets/cart.svg" alt="cart logo" id="cart" />
           </div>
         </div>
@@ -98,7 +98,7 @@
             <textarea id="message"></textarea>
         </div>
 
-        <button type="submit">Send Message</button>
+        <button type="button" onclick="submit2()">Send Message</button>
     </form>
 </section>
 
@@ -127,15 +127,17 @@
               class="newsletter-form-inside"
               type="text"
               placeholder="Enter your name"
+              id="fullname"
             />
 
             <input
               class="newsletter-form-inside"
               type="email"
               placeholder="Enter your email"
+              id="email"
             />
 
-            <button>
+            <button onclick="footerform()">
               <i class="bi bi-send-fill"></i>
             </button>
           </div>
@@ -220,5 +222,20 @@
         <br>
       </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../javascript/contact.js"></script>
 </body>
 </html>

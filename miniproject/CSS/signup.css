@@ -1,0 +1,149 @@
+.registration-container {
+  width: 400px;
+  background: rgb(142, 178, 153);
+  padding: 40px;
+  border-radius: 10px;
+    opacity: 70%;
+
+
+}
+h2 {
+  margin-bottom: 25px;
+  color: #000;
+}
+.input-box {
+  margin: 20px 0;
+}
+.input-box input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+}
+#extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 13px;
+}
+.signup {
+  display: flex;
+
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: #4a67f5;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+#navigation-bar {
+  background-color: #3b5d50;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding-left: 138px;
+  padding-right: 138px;
+}
+
+#brand-name {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 32px;
+  font-weight: bold;
+}
+#menu-item {
+  display: flex;
+  align-items: center;
+}
+#menu-name {
+  display: flex;
+  align-items: center;
+
+  gap: 35px;
+}
+
+.menu {
+  text-decoration: none;
+  position: relative;
+
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  padding: 14px 0;
+}
+.menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+
+  width: 0;
+  height: 4px;
+  background-color: #f9bf29;
+
+  transition: width 0.5s ease;
+}
+
+.menu:hover::after {
+  width: 100%;
+}
+
+.menu:hover {
+  color: white;
+}
+#cart {
+  color: aliceblue;
+  height: 21px;
+  width: 21px;
+  margin: 6px;
+  cursor: pointer;
+}
+#icons {
+  display: flex;
+  align-items: center;
+
+  margin-left: 60px;
+
+  gap: 20px;
+}
+#hero {
+  background-color: #3b5d50;
+  background-image: url(../assets/dots-green.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  background-size: 270px 345px;
+
+  height: 520px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px 85px 20px 80px;
+}
+#couch {
+  width: 800px;
+  position: relative;
+  right: -30px;
+  top: 15px;
+}
