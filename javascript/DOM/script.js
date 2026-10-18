@@ -38,3 +38,15 @@ function submit2(){
 
 }
 
+
+const coursedid=document.getElementById("course");
+
+
+console.log(coursedid);
+const heading=document.querySelector("h2");
+console.log(heading);
+
+console.log(heading.parentElement.lastElementChild);
+console.log(heading.parentElement.children);
+console.log(heading.parentElement.firstElementChild);
+
